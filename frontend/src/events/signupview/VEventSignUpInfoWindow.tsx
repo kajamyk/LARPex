@@ -12,7 +12,7 @@ export enum EventType {
     SUCCESS = 'SUCCESS',
 }
 
-export const EventSignUpView: FC<EventSignUpViewProps> = ({status}) => {
+export const VEventSignUpInfoWindow: FC<EventSignUpViewProps> = ({status}) => {
     const randomResponse = () => {
         return () => {
             switch (Math.floor(Math.random() * 3)) {
