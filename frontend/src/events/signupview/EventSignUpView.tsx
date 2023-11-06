@@ -13,7 +13,18 @@ export enum EventType {
 }
 
 export const EventSignUpView: FC<EventSignUpViewProps> = ({status}) => {
-
+    const randomResponse = () => {
+        return () => {
+            switch (Math.floor(Math.random() * 3)) {
+                case 1:
+                    return EventType.ERROR
+                case 0:
+                    return EventType.SUCCESS
+                default:
+                    return EventType.NOT_AVALIABLE_PLACE
+            }
+        }
+    }
 
     const getTitle = () => {
         switch (status) {
