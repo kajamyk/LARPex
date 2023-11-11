@@ -5,7 +5,7 @@ import Placeholder from './Placeholder';
 import original from 'react95/dist/themes/original';
 import { EventsListView } from '../events/EventsListView';
 import { ClippyProvider } from '@react95/clippy';
-import { PaymentsPage } from 'src/payments/PaymentsPage';
+import VPayWnd from 'src/payments/views/VPayWnd';
 
 // zmiencie sobie routy jak będzie trzeba B)
 const router = createBrowserRouter([
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/payments',
-    element: <PaymentsPage />,
+    element: <VPayWnd />,
   },
 ]);
 
